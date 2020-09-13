@@ -1,0 +1,160 @@
+.hexa {
+  width: 78px;
+  height: 90px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: -17px;
+  font-size: 40px;
+  font-family: Verdana sans-serif;
+}
+
+.initials {
+  background-image: url("blank.svg");  
+  width: 78px;
+  height: 90px;
+  float: left;
+  display: none;
+}
+
+.hexa p {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.initials p {
+  padding-top: 20px;
+  margin: 0;
+  font-size: 40px;
+  font-family: Verdana sans-serif;
+  text-align: center;
+}
+
+.questId {
+  display: none;
+}
+
+.correctB {
+  background-color: #39BDF7;
+}
+
+.correctO {
+  background-color: #FFB53E;
+}
+
+.wrong {
+  background-color: black;
+  color: white;
+}
+
+.question {
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+.black {
+  color: white;
+}
+
+.blank {
+  background-image: url("blank.svg");
+}
+
+.blank2 {
+  background-image: url("blank2.svg");
+}
+
+.blue {
+  background-image: url("blue.svg");
+}
+
+.orange {
+  background-image: url("orange.svg");
+}
+
+.black {
+  background-image: url("black.svg");
+}
+
+.blank:hover {
+  background-image: url("blank2.svg");
+  cursor: pointer;
+}
+
+.row .hexa {
+  float: left;
+}
+
+.all {
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+}
+
+.right-col {
+  width: 35%;
+  margin-top: 100px;
+  float: left;
+}
+
+.button {
+  float: left;
+  padding: 5px;
+  font-size: 20px;
+  font-family: Verdana sans-serif;
+  margin: 3px;
+  border-radius: 4px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.black:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  margin-left: 100px;
+  margin-top: 20px;
+  display: none;
+}
+
+.timer {
+  color: red;
+  width: 30px;
+  font-weight: bold;
+}
+
+.row {
+  text-align: center;
+}
+
+.break {
+  clear: both;
+}
+
+.sixth {
+  margin-left: 42px;
+}
+
+.fifth {
+  margin-left: 84px;
+}
+
+.fourth {
+  margin-left: 126px;
+}
+
+.third {
+  margin-left: 168px;
+}
+
+.second {
+  margin-left: 210px;
+}
+
+.first {
+  margin-left: 252px;
+}
+
