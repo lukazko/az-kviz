@@ -1,4 +1,5 @@
 let blackCounter = 0;
+let timer;
 
 function getQuestion(id) {
 
@@ -11,7 +12,7 @@ function getQuestion(id) {
         $('.initials').show();
 
         let timeleft = 30;
-        let timer = setInterval(function () {
+        timer = setInterval(function () {
             if (timeleft <= 0) {
                 clearInterval(timer);
                 $(".timer").text(0);
@@ -214,6 +215,10 @@ function getQuestion(id) {
 
 function answer(color) {
 
+    // Vynulování timeru, pokud ještě nestihl dojít na 0
+    clearInterval(timer);
+
+    // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {
         blackCounter++;
     }
