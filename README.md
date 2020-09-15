@@ -11,6 +11,6 @@ Webová aplikace na motivy AZ kvízu pro hrací večery s přáteli.
 ## Známé chyby & omezení
 - Otázky prozatím napsány natvrdo v kódu
 - Není vyřešena automatická signalizace výhry jednoho z hráčů
-- Pouze semifinále
+- Pouze 1 semifinále zatím
 - Neexistence bankomatu pro finálního výherce
 
