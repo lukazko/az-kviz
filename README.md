@@ -11,6 +11,7 @@ Webová aplikace na motivy AZ kvízu pro hrací večery s přáteli.
 - V pravém dolním rohu je tlačítko, kterým se jde vrátit zpět na úvodní obrazovku (pozor poté se již nelze vrátit do rozehrané hry!)
 
 ## Známé chyby & omezení
+- Layout není responzivní, je nutné spustit na displeji s minimálně 1200 horizontálními pixely
 - Otázky prozatím napsány natvrdo v kódu
 - Není vyřešena automatická signalizace výhry jednoho z hráčů
 - Pouze 1 semifinále zatím
