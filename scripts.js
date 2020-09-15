@@ -36,7 +36,7 @@ function getQuestion(id) {
 
             case 1:
                 $('.initials').html('<p>SR</p>');
-                $('.question').text('Pod jakým uměleckým jménem vystupuje Jaroslav Poskočil, mezi jehož hity patří rappové písně jako Pindisfildis, Dvanácterák či Parket?');
+                $('.question').text('Pod jakým uměleckým jménem vystupuje Prokop Vejda, mezi jehož hity patří rappové písně jako Pindisfildis, Dvanácterák či Parket?');
                 break;
 
             case 2:
