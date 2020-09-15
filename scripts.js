@@ -3,6 +3,15 @@ let timer;
 
 function getQuestion(id) {
 
+    if ($('.blank2').length > 0) {
+        return;
+    }
+
+    // Vynulování timeru, pokud ještě nestihl dojít na 0
+    $(".timer").text(30);
+    clearInterval(timer);
+
+    // Větev pro nezodpovězené otázky
     if ($('#' + id).hasClass('blank') == true) {
 
         $('#' + id).removeClass('blank')
@@ -176,7 +185,7 @@ function getQuestion(id) {
         $('.initials').show();
 
         let timeleft = 30;
-        let timer = setInterval(function () {
+        timer = setInterval(function () {
             if (timeleft <= 0) {
                 clearInterval(timer);
                 $(".timer").text(0);
@@ -235,12 +244,13 @@ function getQuestion(id) {
 
 function answer(color) {
 
-    // Vynulování timeru, pokud ještě nestihl dojít na 0
-    clearInterval(timer);
-
     // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {
         blackCounter++;
+        
+        if (blackCounter>9) {
+            blackCounter = 0;
+        }
     }
 
     $('#' + $('.questId').text()).removeClass("blank blank2 black");
@@ -264,6 +274,6 @@ function answer(color) {
     $('.buttons').hide();
     $('.initials').hide();
     $('.question').text('Zvolte další pole.');
-    $(".timer").text(30);
+
 }
 
