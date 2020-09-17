@@ -71,6 +71,14 @@ a:hover {
   display: none;
 }
 
+.start {
+  background-color: #39BDF7;
+}
+
+.stop {
+  background-color: #FFB53E;
+}
+
 .correctB {
   background-color: #39BDF7;
 }
@@ -87,6 +95,12 @@ a:hover {
 .question {
   margin-left: 100px;
   font-size: 20px;
+}
+
+.win-list {
+  margin-left: 100px;
+  font-size: 20px;
+  height: 160px;
 }
 
 .black {
@@ -158,6 +172,10 @@ a:hover {
   display: none;
 }
 
+.buttons.bank {
+  display: block;
+}
+
 .timer {
   color: red;
   width: 30px;
@@ -176,8 +194,16 @@ a:hover {
   margin-left: 42px;
 }
 
+.fourth.bank {
+  margin-left: 210px;
+}
+
 .fifth {
   margin-left: 84px;
+}
+
+.fifth.bank {
+  margin-left: 252px;
 }
 
 .fourth {
