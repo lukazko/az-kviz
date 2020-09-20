@@ -16,6 +16,7 @@ Webová aplikace na motivy AZ kvízu pro hrací večery s přáteli.
 - Layout není responzivní, je nutné spustit na displeji s minimálně 1200 horizontálními pixely
 - Otázky prozatím napsány natvrdo v kódu
 - Není vyřešena automatická signalizace výhry jednoho z hráčů
-- Pouze 1 semifinále zatím
-- Provizoní bankomat přidán, výhry je zatím potřeba napsat natvrdo dod kódu
+- Pouze semifinále zatím
+- Provizoní bankomat přidán, výhry je zatím potřeba napsat natvrdo do kódu
+- Pro změnu otázek či výher je potřeba jít do adresáře scripts a v příslušných souborech upravit otázku/výhru
 

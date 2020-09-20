@@ -33,7 +33,7 @@ a:hover {
 }
 
 .initials {
-  background-image: url("blank.svg");  
+  background-image: url("img/blank.svg");  
   width: 78px;
   height: 90px;
   float: left;
@@ -108,27 +108,27 @@ a:hover {
 }
 
 .blank {
-  background-image: url("blank.svg");
+  background-image: url("img/blank.svg");
 }
 
 .blank2 {
-  background-image: url("blank2.svg");
+  background-image: url("img/blank2.svg");
 }
 
 .blue {
-  background-image: url("blue.svg");
+  background-image: url("img/blue.svg");
 }
 
 .orange {
-  background-image: url("orange.svg");
+  background-image: url("img/orange.svg");
 }
 
 .black {
-  background-image: url("black.svg");
+  background-image: url("img/black.svg");
 }
 
 .blank:hover {
-  background-image: url("blank2.svg");
+  background-image: url("img/blank2.svg");
   cursor: pointer;
 }
 

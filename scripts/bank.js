@@ -11,7 +11,7 @@ function start() {
 
     $('.hexa').removeClass('blank2');
     $('#' + (id - 1)).removeClass('blank');
-    $('.question').text('Zastav bankomat na libovolném poli zmáčnutím stop.');
+    $('.question').text('Zastav bankomat na libovolném poli zmáčknutím stop.');
     id = 1;
     timer = setInterval(function () {
 
@@ -21,10 +21,10 @@ function start() {
         }
 
         if (id === 19) {
-            id = 1; // If counter = 3, set it back to 1 for next loop
+            id = 1; 
         }
         else {
-            id++; // Else, add 1 to the counter
+            id++;
         }
     }, 500);
 
