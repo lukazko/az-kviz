@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="rajmund.cz">
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/final.js"></script>
+    <title>AZ Kvíz | Finále</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="row first">
+            <div class="hexa blank" id="1">
+                <p onclick=getQuestion(1)>A</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row second">
+            <div class="hexa blank" id="2">
+                <p onclick=getQuestion(2)>B</p>
+            </div>
+            <div class="hexa blank" id="3">
+                <p onclick=getQuestion(3)>C</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row third">
+            <div class="hexa blank" id="4">
+                <p onclick=getQuestion(4)>Č</p>
+            </div>
+            <div class="hexa blank" id="5">
+                <p onclick=getQuestion(5)>D</p>
+            </div>
+            <div class="hexa blank" id="6">
+                <p onclick=getQuestion(6)>E</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row fourth">
+            <div class="hexa blank" id="7">
+                <p onclick=getQuestion(7)>F</p>
+            </div>
+            <div class="hexa blank" id="8">
+                <p onclick=getQuestion(8)>G</p>
+            </div>
+            <div class="hexa blank" id="9">
+                <p onclick=getQuestion(9)>H</p>
+            </div>
+            <div class="hexa blank" id="10">
+                <p onclick=getQuestion(10)>Ch</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row fifth">
+            <div class="hexa blank" id="11">
+                <p onclick=getQuestion(11)>I</p>
+            </div>
+            <div class="hexa blank" id="12">
+                <p onclick=getQuestion(12)>J</p>
+            </div>
+            <div class="hexa blank" id="13">
+                <p onclick=getQuestion(13)>K</p>
+            </div>
+            <div class="hexa blank" id="14">
+                <p onclick=getQuestion(14)>L</p>
+            </div>
+            <div class="hexa blank" id="15">
+                <p onclick=getQuestion(15)>M</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row sixth">
+            <div class="hexa blank" id="16">
+                <p onclick=getQuestion(16)>N</p>
+            </div>
+            <div class="hexa blank" id="17">
+                <p onclick=getQuestion(17)>O</p>
+            </div>
+            <div class="hexa blank" id="18">
+                <p onclick=getQuestion(18)>P</p>
+            </div>
+            <div class="hexa blank" id="19">
+                <p onclick=getQuestion(19)>R</p>
+            </div>
+            <div class="hexa blank" id="20">
+                <p onclick=getQuestion(20)>S</p>
+            </div>
+            <div class="hexa blank" id="21">
+                <p onclick=getQuestion(21)>Š</p>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="row seventh">
+            <div class="hexa blank" id="22">
+                <p onclick=getQuestion(22)>T</p>
+            </div>
+            <div class="hexa blank" id="23">
+                <p onclick=getQuestion(23)>U</p>
+            </div>
+            <div class="hexa blank" id="24">
+                <p onclick=getQuestion(24)>V</p>
+            </div>
+            <div class="hexa blank" id="25">
+                <p onclick=getQuestion(25)>W</p>
+            </div>
+            <div class="hexa blank" id="26">
+                <p onclick=getQuestion(26)>Y</p>
+            </div>
+            <div class="hexa blank" id="27">
+                <p onclick=getQuestion(27)>Z</p>
+            </div>
+            <div class="hexa blank" id="28">
+                <p onclick=getQuestion(28)>Ž</p>
+            </div>
+        </div>
+    </div>
+    <div class="right-col">
+        <div class="questId">
+        </div>
+        <div class="initials">
+            <p></p>
+        </div>
+        <div class="question">
+            První hráč si zvolí pole.
+        </div>
+        <div class="break"></div>
+        <div class="buttons">
+            <div class="timer button">30</div>
+            <div class="correctB button" onclick=answer(1)>
+                Uhodl
+            </div>
+            <div class="correctO button" onclick=answer(2)>
+                Uhodl
+            </div>
+            <div class="wrong button" onclick=answer(3)>
+                Neuhodl
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <a href="index.html">Zpět na rozcestí</a>
+    </div>
+</body>
+
+</html>

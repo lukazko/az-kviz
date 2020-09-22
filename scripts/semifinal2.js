@@ -76,7 +76,7 @@ function getQuestion(id) {
 
             case 9:
                 $('.initials').html('<p>TT</p>'); //Týnuš Třešničková
-                $('.question').text('Jak se jmenuje česká beauty Youtuberka, která se v Turecku nachomítla k explozi v baru a nyní už kvůli tomu není tak moc beauty?');
+                $('.question').text('Jak se jmenuje česká beauty Youtuberka, která se v Turecku nachomýtla k explozi v baru a nyní už kvůli tomu není tak moc beauty?');
                 break;
 
             case 10:
@@ -86,7 +86,7 @@ function getQuestion(id) {
 
             case 11:
                 $('.initials').html('<p>KP</p>'); //královská postupka
-                $('.question').text('Jak se do češtiny překládá název nejsilnější kombinace karet, které lze dosáhnout ve hře Texas Holdem?');
+                $('.question').text('Jak se do češtiny překládá název nejsilnější kombinace karet, které lze dosáhnout ve hře Texas Holdem Poker?');
                 break;
 
             case 12:
@@ -101,7 +101,7 @@ function getQuestion(id) {
 
             case 14:
                 $('.initials').html('<p>R</p>'); //Reels
-                $('.question').text('Jaký je název instagramové funce umožňující nahrávat a editovat 15sekundová videa, jež má být odpovědí na stále populárnější službu TikTok?');
+                $('.question').text('Jaký je název instagramové funkce umožňující nahrávat a editovat 15sekundová videa, jež má být odpovědí na stále populárnější službu TikTok?');
                 break;
 
             case 15:
@@ -121,12 +121,12 @@ function getQuestion(id) {
 
             case 18:
                 $('.initials').html('<p>BM</p>'); //Bayern Mnichov
-                $('.question').text('Jak se jmenuje fotbalový tým, který tento zvítězil Lize mistrů a odnesl si tak již 6. titul v této soutěži?');
+                $('.question').text('Jak se jmenuje fotbalový tým, který tento rok zvítězil v Lize mistrů a odnesl si tak již 6. titul v této soutěži?');
                 break;
 
             case 19:
                 $('.initials').html('<p>R</p>'); //Roklinka
-                $('.question').text('Jak nazývalo horské útočiště, ve kterém v knihách a filmech Pán prstenů sídlí Elrond Půlelf?');
+                $('.question').text('Jak se nazývalo horské útočiště, ve kterém v knihách a filmech Pán prstenů sídlí Elrond Půlelf?');
                 break;
 
             case 20:
@@ -141,7 +141,7 @@ function getQuestion(id) {
 
             case 22:
                 $('.initials').html('<p>KJ</p>'); //Koněpruské jeskyně
-                $('.question').text('Jak se nazývá rozsáhlý jeskynní systém nacházející se 5 km od obce Broumov??');
+                $('.question').text('Jak se nazývá rozsáhlý jeskynní systém nacházející se 5 km od obce Broumov?');
                 break;
 
             case 23:
@@ -151,7 +151,7 @@ function getQuestion(id) {
 
             case 24:
                 $('.initials').html('<p>T</p>'); //Theremin
-                $('.question').text('Jak se jmenuje elektronický hudební nástroj, který vynalezený v roce 1920 a unikátní tám, že jde o první hudební nástroj, na který se hraje, aniž by se ho hráč jakkoli dotýkal?');
+                $('.question').text('Jak se jmenuje elektronický hudební nástroj vynalezený v roce 1920 a unikátní tím, že jde o první hudební nástroj, na který se hraje, aniž by se ho hráč jakkoli dotýkal?');
                 break;
 
             case 25:
@@ -161,17 +161,17 @@ function getQuestion(id) {
 
             case 26:
                 $('.initials').html('<p>F</p>'); //flamenco
-                $('.question').text('Jak se nazývá hudebně taneční kultura, jejíž centrem je Španělsko a charakteristickým nástrojem k tanci jsou kastanety??');
+                $('.question').text('Jak se nazývá hudebně taneční kultura, jejíž centrem je Španělsko a charakteristickým nástrojem k tanci jsou kastaněty??');
                 break;
 
             case 27:
                 $('.initials').html('<p>O</p>'); //Orion
-                $('.question').text('Který český rapper má stejnou přezdívku jako název jedné ze značek tuzemské čokolády?');
+                $('.question').text('Který český rapper má stejnou přezdívku jako je název jedné ze značek tuzemské čokolády?');
                 break;
 
             case 28:
                 $('.initials').html('<p>CC</p>'); //Courtney Cox
-                $('.question').text('Jak se jmenuje představitelka Moniky z populárního amerického seriálu přátelé?');
+                $('.question').text('Jak se jmenuje představitelka Moniky z populárního amerického seriálu Přátelé?');
                 break;
         }
     }
@@ -200,11 +200,11 @@ function getQuestion(id) {
         switch (blackCounter) {
 
             case 0:
-                $('.question').text('Filip Král měl dle svých slov sex na stromě více než 1.'); //ano
+                $('.question').text('Filip Král měl dle svých slov sex na stromě více než jednou.'); //ano
                 break;
 
             case 1:
-                $('.question').text('Seriál Game of Thrones má celkem 10 sérií.'); //ne
+                $('.question').text('Seriál American Horror Story má celkem 10 sérií.'); //ne
                 break;
 
             case 2:
@@ -232,7 +232,7 @@ function getQuestion(id) {
                 break;
 
             case 8:
-                $('.question').text('Zakladatel módní značky Versage byl zavražděn před svou rezidencí v Miami.'); //ano
+                $('.question').text('Zakladatel módní značky Versace byl zavražděn před svou rezidencí v Miami.'); //ano
                 break;
 
             case 9:

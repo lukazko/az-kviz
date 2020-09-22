@@ -35,28 +35,28 @@ function getQuestion(id) {
         switch (id) {
 
             case 1:
-                $('.initials').html('<p>SR</p>'); //Stříbrný Rafael
-                $('.question').text('Pod jakým uměleckým jménem vystupuje Prokop Vejda, mezi jehož hity patří rappové písně jako Pindisfildis, Dvanácterák či Parket?');
+                $('.initials').html('<p>A</p>'); //
+                $('.question').text('');
                 break;
 
             case 2:
-                $('.initials').html('<p>M</p>'); //Mendělejev
-                $('.question').text('Jak se jmenoval ruský vědec, který objevil a navrhl - dodnes nejpoužívanější - schéma uspořádání chemických prvků do periodické tabulky?');
+                $('.initials').html('<p>B</p>'); //
+                $('.question').text('?');
                 break;
 
             case 3:
-                $('.initials').html('<p>D</p>'); //Decameron
-                $('.question').text('Jak se jmenuje známá povídková kniha Giovanniho Boccaccia plná zvrhlého sexu a dalších oplzlostí?');
+                $('.initials').html('<p>C</p>'); //
+                $('.question').text('?');
                 break;
 
             case 4:
-                $('.initials').html('<p>VM</p>'); //Velký Mehelník
-                $('.question').text('Jak se nazývá nejvyšší vrchol Píseckých hor, označovaný mimo jiné za domov skřítka Pimona?');
+                $('.initials').html('<p>Č</p>'); //
+                $('.question').text('?');
                 break;
 
             case 5:
-                $('.initials').html('<p>L</p>'); //Lukašenko
-                $('.question').text('Jaké je přijmení běloruského diktátora působícího jako hlava státu od roku 1994 až do dnes?');
+                $('.initials').html('<p>D</p>'); //
+                $('.question').text('?');
                 break;
 
             case 6:
@@ -171,7 +171,7 @@ function getQuestion(id) {
 
             case 28:
                 $('.initials').html('<p>RG</p>'); //Rupert Grint
-                $('.question').text('Jak se celým jménem jmenuje představitel filmového čaroděje Ronalda Bilia Weasleyho?');
+                $('.question').text('Jak se celým jménem jmenuje představitel filmového čaroděje Ronalda Bilius Weasleyho?');
                 break;
         }
     }
