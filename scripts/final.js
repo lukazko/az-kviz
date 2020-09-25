@@ -9,6 +9,7 @@ $(document).ready(function() {
     countdown.autoPlay = false;
     countdown.preLoad = true;
     countdown.controls = true;
+    countdown.currentTime = 0.5
 });
 
 // Zobrazení otázky po kliknutí na pole
@@ -259,7 +260,7 @@ function getQuestion(id) {
 function answer(color) {
 
     countdown.pause(); // Případně zastavení zvuku 
-    countdown.currentTime = 0; // Přetočení na začátek
+    countdown.currentTime = 0.5; // Přetočení na začátek
 
     // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {
