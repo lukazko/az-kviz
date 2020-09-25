@@ -1,11 +1,23 @@
 let blackCounter = 0;
 let timer;
 
+// Zvuk odpočtu
+$(document).ready(function() {   
+    countdown.src = "sound/countdown.mp3";
+    countdown.volume = 0.1;
+    countdown.autoPlay = false;
+    countdown.preLoad = true;
+    countdown.controls = true;
+});
+
 function getQuestion(id) {
 
     if ($('.blank2').length > 0) {
         return;
     }
+
+    // Spuštění zvuku odpočtu
+    countdown.play();
 
     // Vynulování timeru, pokud ještě nestihl dojít na 0
     $(".timer").text(30);
@@ -243,6 +255,9 @@ function getQuestion(id) {
 }
 
 function answer(color) {
+
+    countdown.pause(); // Případně zastavení zvuku 
+    countdown.currentTime = 0; // Přetočení na začátek
 
     // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {

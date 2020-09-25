@@ -1,15 +1,29 @@
 let blackCounter = 0;
 let timer;
+let countdown = document.createElement("audio");
 
+// Zvuk odpočtu
+$(document).ready(function() {   
+    countdown.src = "sound/countdown.mp3";
+    countdown.volume = 0.1;
+    countdown.autoPlay = false;
+    countdown.preLoad = true;
+    countdown.controls = true;
+});
+
+// Zobrazení otázky po kliknutí na pole
 function getQuestion(id) {
 
     if ($('.blank2').length > 0) {
         return;
     }
 
+    // Spuštění zvuku odpočtu
+    countdown.play();
+
     // Vynulování timeru, pokud ještě nestihl dojít na 0
     $(".timer").text(30);
-    clearInterval(timer);
+    clearInterval(timer);  
 
     // Větev pro nezodpovězené otázky
     if ($('#' + id).hasClass('blank') == true) {
@@ -60,28 +74,28 @@ function getQuestion(id) {
                 break;
 
             case 6:
-                $('.initials').html('<p>B</p>'); //Borísek
-                $('.question').text('Jak se jmenuje kocour, kterého vlastní známý český youtuber FiziStyle?');
+                $('.initials').html('<p>E</p>'); //Echinacea
+                $('.question').text('Jaké je latinské rodové jméno byliny v češtině známé jako Třepatka nachová?');
                 break;
 
             case 7:
-                $('.initials').html('<p>A</p>'); //Altruismus
-                $('.question').text('Jakým cizím slovem popisujeme nesobecký způsob myšlení a cítění?');
+                $('.initials').html('<p>F</p>'); //
+                $('.question').text('?');
                 break;
 
             case 8:
-                $('.initials').html('<p>P</p>'); //Počátek
-                $('.question').text('Jaký je název akčního filmu Christophera Nolana z roku 2010, ve kterém hraje hlavní roli Leonardo DiCaprio?');
+                $('.initials').html('<p>G</p>'); //Počátek
+                $('.question').text('?');
                 break;
 
             case 9:
-                $('.initials').html('<p>ŠaZ</p>'); //Šípková a zelí
-                $('.question').text('Mezi jakými dvěmi možnostmi příloh se rozhodovali myslivci při přípavě uloveného kance ve filmu Slavnosti sněženek?');
+                $('.initials').html('<p>H</p>'); //Šípková a zelí
+                $('.question').text('?');
                 break;
 
             case 10:
-                $('.initials').html('<p>K</p>'); //Kylie
-                $('.question').text('Jaké je křestní jméno nejmladšího ze sourozenců Kardashian/Jenner, kteří vystupovali v televizní show Keeping Up with the Kardashians?');
+                $('.initials').html('<p>Ch</p>'); //Kylie
+                $('.question').text('?');
                 break;
 
             case 11:
@@ -115,8 +129,8 @@ function getQuestion(id) {
                 break;
 
             case 17:
-                $('.initials').html('<p>B</p>'); //baník
-                $('.question').text('Jak se v ostravském nářečí nazývá zaměstnání zahrnující důlní práce a těžbu nerostných surovin?');
+                $('.initials').html('<p>B</p>'); //
+                $('.question').text('rovin?');
                 break;
 
             case 18:
@@ -243,6 +257,9 @@ function getQuestion(id) {
 }
 
 function answer(color) {
+
+    countdown.pause(); // Případně zastavení zvuku 
+    countdown.currentTime = 0; // Přetočení na začátek
 
     // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {
