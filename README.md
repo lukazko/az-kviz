@@ -1,5 +1,5 @@
 # az-kviz
-Webová aplikace na motivy AZ kvízu pro hrací večery s přáteli.
+Webová aplikace na motivy AZ kvízu pro herní večery s přáteli.
 
 ## Ovládání
 - Ovládá moderátor hry
