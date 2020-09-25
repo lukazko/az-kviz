@@ -1,5 +1,6 @@
 let blackCounter = 0;
 let timer;
+let countdown = document.createElement("audio");
 
 // Zvuk odpočtu
 $(document).ready(function() {   
