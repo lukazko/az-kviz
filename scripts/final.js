@@ -90,12 +90,12 @@ function getQuestion(id) {
                 break;
 
             case 9:
-                $('.initials').html('<p>H</p>'); //Šípková a zelí
+                $('.initials').html('<p>H</p>'); //
                 $('.question').text('?');
                 break;
 
             case 10:
-                $('.initials').html('<p>Ch</p>'); //Kylie
+                $('.initials').html('<p>Ch</p>'); //
                 $('.question').text('?');
                 break;
 
@@ -155,38 +155,38 @@ function getQuestion(id) {
                 break;
 
             case 22:
-                $('.initials').html('<p>MV</p>'); //Miloš Vystrčil
-                $('.question').text('Jaké je jméno a příjmení současného předsedy Senátu ČR, který nedávno navštívil Tchaj-wan?');
+                $('.initials').html('<p></p>'); //
+                $('.question').text('?');
                 break;
 
             case 23:
-                $('.initials').html('<p>C</p>'); //Cín
-                $('.question').text('Jaký je český náze v chemického prvku v latině označovaného jako Stannum?');
+                $('.initials').html('<p></p>'); //
+                $('.question').text('?');
                 break;
 
             case 24:
-                $('.initials').html('<p>T</p>'); //Tokio
-                $('.question').text('V jakém městě by se měly příští rok konat Letní olympijské hry?');
+                $('.initials').html('<p></p>'); //
+                $('.question').text('?');
                 break;
 
             case 25:
-                $('.initials').html('<p>PH</p>'); //Patrik Hezucký
-                $('.question').text('Jak se celým jménem jmenuje moderátor, který spolu s Leošem Marešem uvádí Ranní show na Evropě 2?');
+                $('.initials').html('<p>W</p>'); //webinář
+                $('.question').text('Jak se nazývá živá forma online komunikace/výuky, která probíhá prostřednictvím internetu nejčastěji přes webový prohlížeč?');
                 break;
 
             case 26:
-                $('.initials').html('<p>A</p>'); //Albánie
-                $('.question').text('Z jaké země pocházela známá řeholnice a humanitární pracovnice Matka Tereza?');
+                $('.initials').html('<p>Y</p>'); //
+                $('.question').text('?');
                 break;
 
             case 27:
-                $('.initials').html('<p>K</p>'); //Kryštof
-                $('.question').text('Jaká populární česká skupina vydala v nedávné době poněkud cringe píseň o Milanu Barošovi?');
+                $('.initials').html('<p>ZU</p>'); //zakázané uvolnění
+                $('.question').text('Jak se v ledním hokeji říká situaci, kdy hráč jakkoli odehraje puk z vlastní poloviny ledové plochy tak, že bez dotyku dalšího hráče přejede až za branku soupeře?');
                 break;
 
             case 28:
-                $('.initials').html('<p>RG</p>'); //Rupert Grint
-                $('.question').text('Jak se celým jménem jmenuje představitel filmového čaroděje Ronalda Bilius Weasleyho?');
+                $('.initials').html('<p>Ž</p>'); //žerzej
+                $('.question').text('Jaké je všeobecné označení pro lehké až středně těžké pleteniny.?');
                 break;
         }
     }
