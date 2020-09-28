@@ -1,16 +1,35 @@
 let blackCounter = 0;
 let timer;
 let countdown = document.createElement("audio");
+let correct = document.createElement("audio");
+let wrong = document.createElement("audio");
 
-// Zvuk odpočtu
-$(document).ready(function() {   
+$(document).ready(function () {
+    // Zvuk odpočtu
     countdown.src = "sound/countdown.mp3";
     countdown.volume = 0.1;
     countdown.autoPlay = false;
     countdown.preLoad = true;
     countdown.controls = true;
-    countdown.currentTime = 0.5
+    countdown.currentTime = 0.5;
+
+    // Zvuk správné odpovědi
+    correct.src = "sound/correct.mp3";
+    correct.volume = 0.1;
+    correct.autoPlay = false;
+    correct.preLoad = true;
+    correct.controls = true;
+    correct.currentTime = 0.9;
+
+    // Zvuk špatné odpovědi
+    wrong.src = "sound/wrong.mp3";
+    wrong.volume = 0.1;
+    wrong.autoPlay = false;
+    wrong.preLoad = true;
+    wrong.controls = true;
+    wrong.currentTime = 0.1;
 });
+
 
 // Zobrazení otázky po kliknutí na pole
 function getQuestion(id) {
@@ -19,8 +38,8 @@ function getQuestion(id) {
         return;
     }
 
-    // Spuštění zvuku odpočtu
-    countdown.play();
+    wrong.pause(); // Zastavení případných zvuků z odpovědí
+    countdown.play(); // Spuštění zvuku odpočtu
 
     // Vynulování timeru, pokud ještě nestihl dojít na 0
     $(".timer").text(30);
@@ -50,8 +69,8 @@ function getQuestion(id) {
         switch (id) {
 
             case 1:
-                $('.initials').html('<p>A</p>'); //
-                $('.question').text('');
+                $('.initials').html('<p>A</p>'); //Albion
+                $('.question').text('Jaký je starořecký název pro britské ostrovy, jenž je dnes používán zejména jako básnický výraz pro Anglii?');
                 break;
 
             case 2:
@@ -70,8 +89,8 @@ function getQuestion(id) {
                 break;
 
             case 5:
-                $('.initials').html('<p>D</p>'); //
-                $('.question').text('?');
+                $('.initials').html('<p>D</p>'); //Demagog
+                $('.question').text('Jak se jmenuje český nezávislý factcheckingový projekt, který se zaměřuje na ověřování faktických tvrzení českých politiků?');
                 break;
 
             case 6:
@@ -85,7 +104,7 @@ function getQuestion(id) {
                 break;
 
             case 8:
-                $('.initials').html('<p>G</p>'); //Počátek
+                $('.initials').html('<p>G</p>'); //
                 $('.question').text('?');
                 break;
 
@@ -100,72 +119,72 @@ function getQuestion(id) {
                 break;
 
             case 11:
-                $('.initials').html('<p>P</p>'); //Prádlo
-                $('.question').text('Jak bychom do češtiny přeložili slovenské slovo bielizeň?');
+                $('.initials').html('<p>I</p>'); //
+                $('.question').text('?');
                 break;
 
             case 12:
-                $('.initials').html('<p>I</p>'); //intersexuál
-                $('.question').text('Jaká sexuální menšina se skrývá pod písmenkem I ve známé zkratce LGBTQIA?');
+                $('.initials').html('<p>J</p>'); //
+                $('.question').text('?');
                 break;
 
             case 13:
-                $('.initials').html('<p>VV</p>'); //Votoč vohoz
-                $('.question').text('Jaké bylo původní jméno oblíbeného portálu pro výměnu oblečení Vinted.cz?');
+                $('.initials').html('<p>K</p>'); //Kodamové
+                $('.question').text('Jak se v japonské kultuře nazývají malí duchové obývající stromy?');
                 break;
 
             case 14:
-                $('.initials').html('<p>E</p>'); //epizeuxis
-                $('.question').text('Jak se nazývá básnická figura, která je založena na opakování stejného slova nebo slovních spojení za sebou v jednom verši?');
+                $('.initials').html('<p>L</p>'); //
+                $('.question').text('?');
                 break;
 
             case 15:
-                $('.initials').html('<p>RČ</p>'); //racionální čísla
-                $('.question').text('Jak se nazývá číselný obor zahrnující čísla, která lze vyjádřit zlomkem, jež nemají nekonečný desetinný rozvoj, nebo jejichž rozvoj je periodický?');
+                $('.initials').html('<p>M</p>'); //Mormoni
+                $('.question').text('Jak se nazývá americké duchovní společenství vycházející z křesťanství, založené v 19. století vyšinutým a nadrženým "prorokem" Josephem Smithem?');
                 break;
 
             case 16:
-                $('.initials').html('<p>M</p>'); //Microsoft
-                $('.question').text('Jak se jmenuje počítačová firma, kterou pomohl v roce 1975 spoluzaložit dnes již zesnuvší Paul Allen?');
+                $('.initials').html('<p>N</p>'); //
+                $('.question').text('?');
                 break;
 
             case 17:
-                $('.initials').html('<p>B</p>'); //
-                $('.question').text('rovin?');
+                $('.initials').html('<p>O</p>'); //
+                $('.question').text('?');
                 break;
 
             case 18:
-                $('.initials').html('<p>L</p>'); //lesba
-                $('.question').text('Jak bychom do češtiny přeložili polské slovíčko pizdojebka?');
+                $('.initials').html('<p>P</p>'); //
+                $('.question').text('?');
                 break;
 
             case 19:
-                $('.initials').html('<p>S</p>'); //Sicilíe
-                $('.question').text('Jaký je název největšího ostrova ve Středozemním moři?');
+                $('.initials').html('<p>R</p>'); //Rupie
+                $('.question').text('Jak se nazývá indické státní platidlo přijímané také v Bhútánu či Nepálu?');
                 break;
 
             case 20:
-                $('.initials').html('<p>C</p>'); //Centrum
-                $('.question').text('Jak jmenuje česká internetová firma na níž vznikla kontroverzní reklama s psem Bobíkem?');
+                $('.initials').html('<p>S</p>'); //
+                $('.question').text('?');
                 break;
 
             case 21:
-                $('.initials').html('<p>Ch</p>'); //chudozubí
-                $('.question').text('Do jakého živočišného řádu patří příslušníci čeledí lenochodovitých?');
+                $('.initials').html('<p>Š</p>'); //
+                $('.question').text('?');
                 break;
 
             case 22:
-                $('.initials').html('<p></p>'); //
+                $('.initials').html('<p>T</p>'); //
                 $('.question').text('?');
                 break;
 
             case 23:
-                $('.initials').html('<p></p>'); //
+                $('.initials').html('<p>U</p>'); //
                 $('.question').text('?');
                 break;
 
             case 24:
-                $('.initials').html('<p></p>'); //
+                $('.initials').html('<p>V</p>'); //
                 $('.question').text('?');
                 break;
 
@@ -215,43 +234,43 @@ function getQuestion(id) {
         switch (blackCounter) {
 
             case 0:
-                $('.question').text('Ganymed je název jednoho ze Saturnových měsíců.'); //ne
+                $('.question').text('Populární česká hra AZ kvíz je k vidění na televizních obrazovkách od 2. ledna 1996.'); //ne 97
                 break;
 
             case 1:
-                $('.question').text('Sopka Pico de Teide ležící na ostrově Tenerife je nejvyšší horou Španělského království.'); //ano
+                $('.question').text('.'); //
                 break;
 
             case 2:
-                $('.question').text('Lucie Palkaninová - přítelkyně zpěváka Bohuše Matuše - se narodila v roce 2003.'); //ano
+                $('.question').text('.'); //
                 break;
 
             case 3:
-                $('.question').text('Vratislav I. je nejstarším historicky doloženým českým panovníkem.'); //ne
+                $('.question').text('.'); //
                 break;
 
             case 4:
-                $('.question').text('K dnešnímu dni se na ČSFD.cz nachází více než 3 filmy s hodnocení vyšším než 95 %.'); //ne
+                $('.question').text('.'); //
                 break;
 
             case 5:
-                $('.question').text('Délka Maratonského běhu činí 42,195 km.'); //ano
+                $('.question').text('.'); //
                 break;
 
             case 6:
-                $('.question').text('Nejsledovanějším videem na Youtube (k dnešnímu dni) je píseň Ed Sheeran – Shape of You.'); //ne
+                $('.question').text('.'); //
                 break;
 
             case 7:
-                $('.question').text('Průměrná velikost lidského penisu při erekci je dle posledních studií 13,12 cm.'); //ano
+                $('.question').text('.'); //
                 break;
 
             case 8:
-                $('.question').text('Hradec Králové je sídlo samosprávného Královéhradeckého kraje a územního Východočeského kraje.'); //ano
+                $('.question').text('.'); //
                 break;
 
             case 9:
-                $('.question').text('Mikuláš Ferjenčík je aktuálním předsedou rozpočtového výboru Poslanecké sněmovny ČR.'); //ne
+                $('.question').text('.'); //
                 break;
         }
     }
@@ -276,14 +295,20 @@ function answer(color) {
     switch (color) {
 
         case 1:
+            correct.play();
+            correct.currentTime = 0.9;
             $('#' + $('.questId').text()).addClass("blue");
             break;
 
         case 2:
+            correct.play();
+            correct.currentTime = 0.9;
             $('#' + $('.questId').text()).addClass("orange");
             break;
 
         case 3:
+            wrong.play();
+            wrong.currentTime = 0.1;
             $('#' + $('.questId').text()).addClass("black prevBlack");
             break;
 

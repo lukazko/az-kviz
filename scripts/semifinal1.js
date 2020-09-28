@@ -1,16 +1,35 @@
 let blackCounter = 0;
 let timer;
 let countdown = document.createElement("audio");
+let correct = document.createElement("audio");
+let wrong = document.createElement("audio");
 
-// Zvuk odpočtu
-$(document).ready(function() {   
+$(document).ready(function () {
+    // Zvuk odpočtu
     countdown.src = "sound/countdown.mp3";
     countdown.volume = 0.1;
     countdown.autoPlay = false;
     countdown.preLoad = true;
     countdown.controls = true;
     countdown.currentTime = 0.5;
+
+    // Zvuk správné odpovědi
+    correct.src = "sound/correct.mp3";
+    correct.volume = 0.1;
+    correct.autoPlay = false;
+    correct.preLoad = true;
+    correct.controls = true;
+    correct.currentTime = 0.9;
+
+    // Zvuk špatné odpovědi
+    wrong.src = "sound/wrong.mp3";
+    wrong.volume = 0.1;
+    wrong.autoPlay = false;
+    wrong.preLoad = true;
+    wrong.controls = true;
+    wrong.currentTime = 0.1;
 });
+
 
 function getQuestion(id) {
 
@@ -18,8 +37,8 @@ function getQuestion(id) {
         return;
     }
 
-    // Spuštění zvuku odpočtu
-    countdown.play();
+    wrong.pause(); // Zastavení případných zvuků z odpovědí
+    countdown.play(); // Spuštění zvuku odpočtu
 
     // Vynulování timeru, pokud ještě nestihl dojít na 0
     $(".timer").text(30);
@@ -275,14 +294,20 @@ function answer(color) {
     switch (color) {
 
         case 1:
+            correct.play();
+            correct.currentTime = 0.9;
             $('#' + $('.questId').text()).addClass("blue");
             break;
 
         case 2:
+            correct.play();
+            correct.currentTime = 0.9;
             $('#' + $('.questId').text()).addClass("orange");
             break;
 
         case 3:
+            wrong.play();
+            wrong.currentTime = 0.1;
             $('#' + $('.questId').text()).addClass("black prevBlack");
             break;
 

@@ -2,12 +2,33 @@ let id;
 let timer;
 let win;
 let countStop = 0;
+let cashmachine = document.createElement("audio");
+let select = document.createElement("audio");
+
+// Zvuk odkrytí výhry
+$(document).ready(function() {   
+    cashmachine.src = "sound/cashmachine.mp3";
+    cashmachine.volume = 0.5;
+    cashmachine.autoPlay = false;
+    cashmachine.preLoad = true;
+    cashmachine.controls = true;
+    cashmachine.currentTime = 0.5;
+
+    select.src = "sound/select.mp3";
+    select.volume = 0.5;
+    select.autoPlay = false;
+    select.preLoad = true;
+    select.controls = true;
+    select.currentTime = 0;
+});
 
 function start() {
    
     if (countStop == 3) {
         return;
     }
+
+    select.play();
 
     $('.hexa').removeClass('blank2');
     $('#' + (id - 1)).removeClass('blank');
@@ -32,7 +53,13 @@ function start() {
 
 function stop() {
 
+    if (countStop == 3) {
+        return;
+    }
+    
     countStop++;
+    cashmachine.play();
+    cashmachine.currentTime = 0.5;
 
     switch (id) {
         case 1:
