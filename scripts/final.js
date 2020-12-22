@@ -43,7 +43,7 @@ function getQuestion(id) {
 
     // Vynulování timeru, pokud ještě nestihl dojít na 0
     $(".timer").text(30);
-    clearInterval(timer);  
+    clearInterval(timer);
 
     // Větev pro nezodpovězené otázky
     if ($('#' + id).hasClass('blank') == true) {
@@ -74,8 +74,8 @@ function getQuestion(id) {
                 break;
 
             case 2:
-                $('.initials').html('<p>B</p>'); //
-                $('.question').text('?');
+                $('.initials').html('<p>B</p>'); //Botticelli
+                $('.question').text('Jaké je příjmení slavného italského renesančního malíře mimo jiného autora obrazu Primavera?');
                 break;
 
             case 3:
@@ -99,8 +99,8 @@ function getQuestion(id) {
                 break;
 
             case 7:
-                $('.initials').html('<p>F</p>'); //
-                $('.question').text('?');
+                $('.initials').html('<p>F</p>'); //fujara
+                $('.question').text('Je to slovenský lidový dřevěný dechový hudební nástroj. Jde o obdobu gotické basové trojdírkové píšťaly, které byly velmi známé a hojně rozšířeny v Evropě ve 12. až 13. století. Jak se nazývá??');
                 break;
 
             case 8:
@@ -154,8 +154,8 @@ function getQuestion(id) {
                 break;
 
             case 18:
-                $('.initials').html('<p>P</p>'); //
-                $('.question').text('?');
+                $('.initials').html('<p>PO</p>'); //puštík obecný
+                $('.question').text('Jak se jmenuje noční pták běžně se vyskytující na českém území?');
                 break;
 
             case 19:
@@ -169,8 +169,8 @@ function getQuestion(id) {
                 break;
 
             case 21:
-                $('.initials').html('<p>Š</p>'); //
-                $('.question').text('?');
+                $('.initials').html('<p>Š</p>'); //štěrk
+                $('.question').text('Jak bychom mohli přeložit německé slovo der Schotter do češtiny?');
                 break;
 
             case 22:
@@ -238,31 +238,31 @@ function getQuestion(id) {
                 break;
 
             case 1:
-                $('.question').text('.'); //
+                $('.question').text('Film Pán prstenů: Návrat krále byl nominován na 10 Oscarů a všech deset nominací proměnil.'); //ne 11
                 break;
 
             case 2:
-                $('.question').text('.'); //
+                $('.question').text('Město Písek je rozděleno na celkem 5 katastrálních území.'); //ano
                 break;
 
             case 3:
-                $('.question').text('.'); //
+                $('.question').text('Youtube kanál Kluka s kamením byl založen 16. 4. 2016.'); //ano
                 break;
 
             case 4:
-                $('.question').text('.'); //
+                $('.question').text('Americký prezident se volí na 4leté funkční období narozdíl od např. českého, který zastává úřad 5 let.'); //ano
                 break;
 
             case 5:
-                $('.question').text('.'); //
+                $('.question').text('Počet nahlášených znásilnění v ČR dle dat Policie ČR od roku 2011 vytrvale stoupá.'); //ne, fluktuuje, spíše klesá
                 break;
 
             case 6:
-                $('.question').text('.'); //
+                $('.question').text('Právnické osoby v ČR aktuálně podléhají 20% sazbě daně z příjmu.'); //ne 19
                 break;
 
             case 7:
-                $('.question').text('.'); //
+                $('.question').text('Firma AT&T je druhým největším dodavatelem mobilních telefonů a největším dodavatelem pevných linek v USA.'); //ano
                 break;
 
             case 8:
@@ -270,6 +270,18 @@ function getQuestion(id) {
                 break;
 
             case 9:
+                $('.question').text('.'); //
+                break;
+
+            case 10:
+                $('.question').text('.'); //
+                break;
+
+            case 11:
+                $('.question').text('.'); //
+                break;
+
+            case 12:
                 $('.question').text('.'); //
                 break;
         }
@@ -284,8 +296,8 @@ function answer(color) {
     // Ošetření, aby každá náhradní otázka byla jiná
     if ($('#' + $('.questId').text()).hasClass('prevBlack') == true) {
         blackCounter++;
-        
-        if (blackCounter>9) {
+
+        if (blackCounter > 12) {
             blackCounter = 0;
         }
     }

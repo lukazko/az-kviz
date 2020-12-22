@@ -96,7 +96,7 @@ function stop() {
             win = 'Nic'
             break;
         case 12:
-            win = 'Nic'
+            win = 'Nafukovacího jednorožce';
             break;
         case 13:
             win = 'Nic'
