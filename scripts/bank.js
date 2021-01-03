@@ -63,7 +63,7 @@ function stop() {
 
     switch (id) {
         case 1:
-            win = 'Nic'
+            win = 'Voňavý stromeček Mironet';
             break;
         case 2:
             win = '1 porci domácí cukrové vaty';
@@ -72,49 +72,49 @@ function stop() {
             win = 'Prague Economic Papers 2/2017';
             break;
         case 4:
-            win = 'Nic'
+            win = 'Respirátor FFP2';
             break;
         case 5:
-            win = 'Nic'
+            win = 'Balíček kondomů';
             break;
         case 6:
-            win = 'Nic'
+            win = 'Psí vakcínu';
             break;
         case 7:
-            win = 'Nic'
+            win = 'Bluetooth sluchátka';
             break;
         case 8:
             win = 'Politická ekonomie 3/2015';
             break;
         case 9:
-            win = 'Nic'
+            win = 'Playmobil postavičku';
             break;
         case 10:
             win = '1 porci domácí cukrové vaty';
             break;
         case 11:
-            win = 'Nic'
+            win = '1 porci domácí cukrové vaty';
             break;
         case 12:
             win = 'Nafukovacího jednorožce';
             break;
         case 13:
-            win = 'Nic'
+            win = 'Psí pamlsky';
             break;
         case 14:
-            win = 'Nic'
+            win = 'Voňavý stromeček Mironet';
             break;
         case 15:
             win = '1 porci domácí cukrové vaty';
             break;
         case 16:
-            win = 'Nic'
+            win = 'Playmobil postavičku';
             break;
         case 17:
-            win = 'Nic'
+            win = 'Balíček kondomů';
             break;
         case 18:
-            win = 'Nic'
+            win = 'Voňavý stromeček Mironet';
             break;
         case 19:
             win = '1 porci domácí cukrové vaty';
