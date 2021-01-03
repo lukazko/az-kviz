@@ -12,7 +12,7 @@ $(document).ready(function() {
     cashmachine.autoPlay = false;
     cashmachine.preLoad = true;
     cashmachine.controls = true;
-    cashmachine.currentTime = 0.5;
+    cashmachine.currentTime = 0.43;
 
     select.src = "sound/select.mp3";
     select.volume = 0.5;
@@ -59,7 +59,7 @@ function stop() {
     
     countStop++;
     cashmachine.play();
-    cashmachine.currentTime = 0.5;
+    cashmachine.currentTime = 0.43;
 
     switch (id) {
         case 1:
@@ -121,8 +121,16 @@ function stop() {
             break;
     }
 
-    $('#' + (id - 1)).removeClass('blank blank2');
+    // Kvůli zmáčnutí stop na posledním poli
+    if (id == 1) {
+        $('#19').removeClass('blank blank2');
+    }
+    // Ostatní pole
+    else {
+        $('#' + (id - 1)).removeClass('blank blank2');
+    }
 
+    // Postupné plnění seznamu výher
     if (countStop == 1) {
         $('.st-win').text(win);
     }
