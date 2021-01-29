@@ -7,7 +7,7 @@ let wrong = document.createElement("audio");
 $(document).ready(function () {
     // Zvuk odpočtu
     countdown.src = "sound/countdown.mp3";
-    countdown.volume = 0.1;
+    countdown.volume = 0.5;
     countdown.autoPlay = false;
     countdown.preLoad = true;
     countdown.controls = true;
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
     // Zvuk správné odpovědi
     correct.src = "sound/correct.mp3";
-    correct.volume = 0.1;
+    correct.volume = 0.2;
     correct.autoPlay = false;
     correct.preLoad = true;
     correct.controls = true;
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // Zvuk špatné odpovědi
     wrong.src = "sound/wrong.mp3";
-    wrong.volume = 0.1;
+    wrong.volume = 0.2;
     wrong.autoPlay = false;
     wrong.preLoad = true;
     wrong.controls = true;
